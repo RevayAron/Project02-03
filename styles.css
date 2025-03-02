@@ -1,0 +1,95 @@
+/* Alapstílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("photos/backgr.png");
+}
+
+header {
+    background-color: #c57e7e18;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Szerver kártyák a főoldalon */
+.server-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.server-card {
+    background-color: rgba(88, 197, 183, 0.082);
+    color: rgb(187, 221, 202);
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.server-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #54af69;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Szerver részletes oldal */
+.server-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.server-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.kep {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Reszponzivitás */
+@media (max-width: 600px) {
+    .server-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .server-details {
+        margin: 10px;
+        padding: 15px;
+    }
+}
